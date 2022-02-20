@@ -400,7 +400,7 @@ ul.primary-menu li ul li:hover a{
     top: 10px;
     width: 1px;
     background: #e73a3e;
-    height: calc(100% - 100px);
+    height: calc(100% - 45px);
 }
 .step-timeline ul li {
     margin-bottom: 25px;
@@ -426,6 +426,12 @@ ul.primary-menu li ul li:hover a{
 }
 .step-timeline ul li p {
     color: #606060;
+}
+.extra {
+    list-style: none;
+    color: #606060;
+    margin-top: -32px;
+    margin-left: 27px;
 }
 .btn-finix {
     position: relative;
@@ -608,9 +614,6 @@ option:hover{
 .services-tab-item li a.active{
     position: relative;
 }
-.services-tab-item li a.active::after{
-
-}
 .services-tab-item li a span i {
     background: #fff;
     height: 80px;
@@ -625,10 +628,6 @@ option:hover{
     font-weight: 600;
     font-size: 20px;
 }
-.loan:hover i{
-    color: #e63b3d !important;
-}
-.serives-tab-content-text{}
 .serives-tab-content-text ul{
     list-style: none;
     padding-left: 0;
@@ -644,4 +643,83 @@ option:hover{
     border-radius: 50%;
     margin-right: 12px;
 
+}
+.serives-tab-content-text ul{
+    border-bottom: none !important;
+}
+.serives-tab ul{
+    border-bottom: 1px solid #606060;
+}
+.serives-tab ul li{}
+.serives-tab button{
+    border: none;
+    background-color: transparent;
+}
+.serives-tab button span {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    line-height: 80px;
+    font-size: 30px;
+    color: #606060;
+    box-shadow: 0px 0px 10px #0000002c;
+    margin-bottom: 10px;
+    margin: auto;
+}
+.serives-tab button strong{
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+.serives-tab li .active span{
+    color: red;
+} 
+.serives-tab li .active{
+    position: relative;
+}
+.serives-tab li .active::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: red;
+}
+.serives-tab ul{
+    position: relative;
+}
+.serives-tab ul::before {
+    content: "\f060";
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 500;
+    position: absolute;
+    bottom: -20px;
+    left: -11px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.233);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid red;
+    text-align: center;
+}
+.serives-tab ul::after {
+    content: "\f061";
+    font-family: 'Font Awesome 6 Pro';
+    font-weight: 500;
+    position: absolute;
+    bottom: -20px;
+    right: -25px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.233);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid red;
+    text-align: center;
 }
